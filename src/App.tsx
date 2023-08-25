@@ -1,3 +1,4 @@
+// React 
 import React from 'react';
 import logo from './logo.svg';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -9,24 +10,28 @@ import './style/App.css';
 import Main from './pages/Main';
 import Pokemon from './pages/Pokemon';
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// Mui Theme
+import { ThemeProvider } from '@mui/material/styles';
+import mainTheme from './themes/mainTheme';
 
 function App() {
   return (
-    <BrowserRouter>
+    <ThemeProvider theme={mainTheme}>
+      <BrowserRouter>
 
-      <main>
-        <Routes>
+        <main>
+          <Routes>
 
-          <Route path='/' element={<Main />} />
+            <Route path='/' element={<Main />} />
 
-          {/* Pokemon Routes */}
+            {/* Pokemon Routes */}
 
-          <Route path='/pokemon/:id' element={<Pokemon />} />
+            <Route path='/pokemon/:id' element={<Pokemon />} />
 
-        </Routes>
-      </main>
-    </BrowserRouter>
+          </Routes>
+        </main>
+      </BrowserRouter >
+    </ThemeProvider>
   );
 }
 
