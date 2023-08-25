@@ -1,5 +1,5 @@
 
-import fetchPokemonById from "../../api/fetchPokemonById"
+import fetchPokemonById from "../../api/fetchPokemonById";
 
 test('Fetching one single pokemon', async () => {
 
