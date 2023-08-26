@@ -1,12 +1,24 @@
-// It Fetchs a pokemon to its number in the National Pokedex
+/**
+ *  Fetchs a pokemon an its main form with the id of the 
+ * @param id Id of Pokemon
+ * @returns {}
+ */
 
 async function fetchPokemonById(id: number) {
 
-    const response = await fetch('https://pokeapi.co/api/v2/pokemon/' + id);
 
-    const pokemon = await response.json();
+    // Gets the Specie of the Pokemon
+    const fetchPokemonSpecie = await fetch('https://pokeapi.co/api/v2/pokemon-species/' + id);
+    const pokemonSpecie = await fetchPokemonSpecie.json();
 
-    return pokemon;
+
+    // Gets the Specie of the Pokemon
+
+    const fetchPokemon = await fetch('https://pokeapi.co/api/v2/pokemon/' + id);
+    const pokemon = await fetchPokemon.json();
+
+
+    return { pokemon, pokemonSpecie };
 
 }
 

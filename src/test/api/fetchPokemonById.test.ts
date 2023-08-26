@@ -6,5 +6,5 @@ test('Fetching one single pokemon', async () => {
     // Gets the first pokémon of the pokedex: Bulbasaur
     const pokemon = await fetchPokemonById(1);
 
-    expect(pokemon.name).toBe('bulbasaur')
+    expect(pokemon.pokemon.name).toBe('bulbasaur')
 })
