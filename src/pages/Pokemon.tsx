@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 import fetchPokemonById from '../api/fetchPokemonById';
 
-import PokemonInfo from '../components/PokemonInfo';
+import PokemonInfo from '../components/PokemonInfo/PokemonInfo';
 
 const Pokemon: React.FC = () => {
 
