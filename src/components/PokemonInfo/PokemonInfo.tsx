@@ -11,7 +11,11 @@ import '../../style/PokemonInfo.css';
 
 
 interface PokemonInfoProps {
-    pokemonData: any;
+    pokemonData: {
+
+        pokemon: any,
+        pokemonSpecie: any
+    };
 }
 
 const PokemonInfo: React.FC<PokemonInfoProps> = ({ pokemonData }) => {
@@ -21,12 +25,27 @@ const PokemonInfo: React.FC<PokemonInfoProps> = ({ pokemonData }) => {
         return <CircularProgress />
     }
 
+    // Stores the Id of the Pokemon
+    const id: number = pokemonData.pokemon.id;
+
+    // Stores the English Pokémon name
+
+    interface NamePokemon {
+        language: {
+
+            name: String,
+            url: String,
+        },
+        name: String
+    }
+
+    const pokemonName = pokemonData.pokemonSpecie.names.filter((name: NamePokemon) => name.language.name === 'en')[0].name;
 
 
     return <div className="Pokemon-Info">
 
-        <PokemonTitle name={pokemonData.name} id={pokemonData.id} />
-        <img alt={pokemonData.name} src={pokemonData.sprites.other['official-artwork'].front_default} />
+        <PokemonTitle name={pokemonName} id={id} />
+        <img alt={pokemonName} src={pokemonData.pokemon.sprites.other['official-artwork'].front_default} />
     </div>
 }
 
