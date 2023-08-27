@@ -1,0 +1,114 @@
+/* The Css behind all the Generation Tags */
+
+.Gen {
+
+    width: 6vmin;
+    display: inline-block;
+    border: solid 2px;
+    border-radius: 15px;
+
+    text-align: center;
+
+    font-family: 'Della Respira', sans-serif;
+}
+
+.I {
+
+    color: white;
+    border-color: black;
+    background: linear-gradient(to right,
+            rgb(255, 5, 5) 0%,
+            rgb(255, 5, 5) 50%,
+            rgb(5, 5, 255) 50%,
+            rgb(5, 5, 255) 100%);
+}
+
+.II {
+
+    color: rgb(0, 0, 0);
+    border-color: black;
+    background: linear-gradient(to right,
+            rgb(255, 255, 0) 0%,
+            rgb(255, 255, 0) 50%,
+            rgb(207, 207, 207) 50%,
+            rgb(207, 207, 207) 100%);
+}
+
+.III {
+    color: white;
+    border-color: black;
+    background: linear-gradient(to right,
+            rgb(255, 5, 5) 0%,
+            rgb(255, 5, 5) 33%,
+            rgb(5, 5, 255) 33%,
+            rgb(5, 5, 255) 66%,
+            rgb(0, 255, 0) 66%,
+            rgb(0, 255, 0) 100%);
+}
+
+.IV {
+
+    color: black;
+    border-color: black;
+
+    background: linear-gradient(to right,
+            rgb(0, 255, 255) 0%,
+            rgb(0, 255, 255) 50%,
+            rgb(255, 108, 133) 50%,
+            rgb(255, 108, 133) 100%);
+}
+
+.V {
+
+    color: rgb(127, 127, 127);
+    border-color: black;
+    background: linear-gradient(to right,
+            black 0%,
+            black 50%,
+            white 50%,
+            white 100%);
+}
+
+.VI {
+
+    color: white;
+    border-color: black;
+    background: linear-gradient(to right,
+            rgb(42, 42, 230)0%,
+            rgb(42, 42, 230) 50%,
+            rgb(202, 33, 33) 50%,
+            rgb(202, 33, 33) 100%);
+}
+
+.VII {
+
+    color: white;
+    border-color: black;
+    background: linear-gradient(to right,
+            orange 0%,
+            orange 50%,
+            purple 50%,
+            purple 100%);
+}
+
+.VIII {
+
+    color: white;
+    border-color: black;
+    background: linear-gradient(to right,
+            rgb(25, 255, 236) 0%,
+            rgb(25, 255, 236)50%,
+            rgb(255, 0, 200) 50%,
+            rgb(255, 0, 200) 100%);
+}
+
+.IX {
+
+    color: white;
+    border-color: black;
+    background: linear-gradient(to right,
+            rgb(131, 73, 8) 0%,
+            rgb(131, 73, 8)50%,
+            rgb(148, 3, 116) 50%,
+            rgb(148, 3, 116) 100%);
+}
