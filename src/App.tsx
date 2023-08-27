@@ -5,6 +5,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // Css style sheets
 import './style/App.css';
+import './style/Generations.css';
+
+// Font
+import '@fontsource/della-respira';
 
 // Routes
 import Main from './pages/Main';
