@@ -4,7 +4,7 @@
 
     width: 6vmin;
     display: inline-block;
-    border: solid 2px;
+    /* border: solid 2px; */
     border-radius: 15px;
 
     text-align: center;
@@ -15,7 +15,6 @@
 .I {
 
     color: white;
-    border-color: black;
     background: linear-gradient(to right,
             rgb(255, 5, 5) 0%,
             rgb(255, 5, 5) 50%,
@@ -26,7 +25,6 @@
 .II {
 
     color: rgb(0, 0, 0);
-    border-color: black;
     background: linear-gradient(to right,
             rgb(255, 255, 0) 0%,
             rgb(255, 255, 0) 50%,
@@ -36,7 +34,6 @@
 
 .III {
     color: white;
-    border-color: black;
     background: linear-gradient(to right,
             rgb(255, 5, 5) 0%,
             rgb(255, 5, 5) 33%,
@@ -52,16 +49,18 @@
     border-color: black;
 
     background: linear-gradient(to right,
-            rgb(0, 255, 255) 0%,
-            rgb(0, 255, 255) 50%,
-            rgb(255, 108, 133) 50%,
-            rgb(255, 108, 133) 100%);
+            rgb(0, 197, 197) 0%,
+            rgb(0, 197, 197) 50%,
+            rgb(192, 68, 186) 50%,
+            rgb(192, 68, 186) 100%);
 }
 
 .V {
 
     color: rgb(127, 127, 127);
-    border-color: black;
+
+    border: solid 2px rgb(127, 127, 127);
+
     background: linear-gradient(to right,
             black 0%,
             black 50%,
@@ -72,7 +71,6 @@
 .VI {
 
     color: white;
-    border-color: black;
     background: linear-gradient(to right,
             rgb(42, 42, 230)0%,
             rgb(42, 42, 230) 50%,
@@ -83,7 +81,6 @@
 .VII {
 
     color: white;
-    border-color: black;
     background: linear-gradient(to right,
             orange 0%,
             orange 50%,
@@ -94,18 +91,16 @@
 .VIII {
 
     color: white;
-    border-color: black;
     background: linear-gradient(to right,
-            rgb(25, 255, 236) 0%,
-            rgb(25, 255, 236)50%,
-            rgb(255, 0, 200) 50%,
-            rgb(255, 0, 200) 100%);
+            rgb(110, 231, 221) 0%,
+            rgb(110, 231, 221) 50%,
+            rgb(126, 0, 98) 50%,
+            rgb(126, 0, 98) 100%);
 }
 
 .IX {
 
     color: white;
-    border-color: black;
     background: linear-gradient(to right,
             rgb(131, 73, 8) 0%,
             rgb(131, 73, 8)50%,
