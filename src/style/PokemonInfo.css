@@ -1,3 +1,31 @@
+/*Pokemon Info*/
+
+.Pokemon-Info {
+
+    display: block;
+
+
+    width: 100%;
+
+}
+
+/* All the content of Pokemon Info excluding the title */
+.Pokemon-Data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "data  types entry"
+    ;
+
+    gap: 1vmin;
+    width: 100%;
+
+    margin: 5vmin 0;
+
+
+}
+
+
 /* Pokemon Title */
 
 .Pokemon-Title {
@@ -14,10 +42,9 @@
     justify-content: space-between;
 
 
-    border-bottom: solid black 1vmin;
+    border-bottom: solid rgb(134, 134, 134) 1vmin;
 
     --border-radius-value: 5px;
-
     border-bottom-left-radius: var(--border-radius-value, 0);
     border-bottom-right-radius: var(--border-radius-value, 0);
 }
@@ -30,12 +57,71 @@
 }
 
 .Pokemon-Title h1 {
+
+    color: rgb(46, 46, 46);
+
     margin-left: 10vw;
 }
 
 .Pokemon-Id {
 
     margin-right: 10vw;
+
     color: gray;
     font-family: 'Audiowide', sans-serif;
+}
+
+/* Pokemon Entry */
+
+.Pokemon-Entries {
+
+    grid-area: entry;
+
+    width: 100%;
+
+}
+
+.Pokemon-Entries-Select {
+
+    margin: 0 4vmin;
+}
+
+.Pokemon-Entries-Label {
+
+    margin: 0 0 2vmin 0;
+}
+
+/* Pokemon Types */
+
+.Pokemon-Types {
+
+
+    grid-area: types;
+
+    display: flex;
+
+    align-items: baseline;
+    justify-content: space-around;
+
+}
+
+.Pokemon-Types-Tags {
+
+    display: flex;
+
+    width: 100%;
+
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+
+.Pokemon-Types-Label {
+
+
+
+    font-weight: bold;
+    text-align: center;
+
+    margin: 0;
 }

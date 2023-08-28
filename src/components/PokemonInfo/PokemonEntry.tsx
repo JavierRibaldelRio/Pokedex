@@ -25,10 +25,12 @@ interface Entry {
 
 interface PokemonEntryProps {
 
-    entries: [Entry]
+    entries: [Entry],
+    mainTypeColor: string
+
 }
 
-const PokemonEntry: React.FC<PokemonEntryProps> = ({ entries }) => {
+const PokemonEntry: React.FC<PokemonEntryProps> = ({ entries, mainTypeColor }) => {
 
     // Selects only english entries
     const englishEntries = entries.filter(entry => entry.language.name === "en");
@@ -78,23 +80,26 @@ const PokemonEntry: React.FC<PokemonEntryProps> = ({ entries }) => {
 
     // if menuItems is empty we do not render anything
     if (menuItems.length === 0) {
-        return <></>
+        return <CircularProgress />
     }
 
     return <div className="Pokemon-Entries">
 
+        <h2 className="Pokemon-Entries-Label">Description:
+            <Select
+                id="Select-Pokedex-Entry"
+                className="Pokemon-Entries-Select"
+                style={{ borderRadius: "15px", borderColor: "mainTypeColor + !important" }}
+                displayEmpty={true}
+                value={entryNumber}
+                onChange={handleChange}>
+                {menuItems}
+            </Select>
+        </h2>
+
         <div className="Pokemon-Entries-Text">{englishEntries[entryNumber].flavor_text}</div>
 
-        <Select
-            id="Select-Pokedex-Entry"
-            className="Pokemon-Entries-Select"
-            displayEmpty={true}
-            value={entryNumber}
-            onChange={handleChange}
-        >
 
-            {menuItems}
-        </Select>
 
     </div >
 }
