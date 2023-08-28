@@ -6,9 +6,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // Css style sheets
 import './style/App.css';
 import './style/Generations.css';
+import './style/Types.css';
 
 // Font
 import '@fontsource/della-respira';
+import '@fontsource-variable/montserrat'
 
 // Routes
 import Main from './pages/Main';
