@@ -1,4 +1,4 @@
-import transformPokemonName from "../../scripts/transformPokemonName";
+import transformPokemonName from "../../utils/transformPokemonName";
 
 test("Transforming Pokemon Name (removing hyphens)", () => {
 

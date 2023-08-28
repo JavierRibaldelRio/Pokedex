@@ -1,4 +1,4 @@
-import capitalizeFirstLetter from "../../scripts/capitalizeFirstLetter";
+import capitalizeFirstLetter from "../../utils/capitalizeFirstLetter";
 
 test("Capitalize first letter of word", () => {
 
