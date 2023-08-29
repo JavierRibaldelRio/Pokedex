@@ -64,6 +64,8 @@ const PokemonInfo: React.FC<PokemonInfoProps> = ({ pokemonData }) => {
     // The color of  Main type of the pokemon to select the color of the bar
     const mainTypeColor = getTypeColor(typeArr[0]);
 
+
+    // Sets the color for Selects and Spinners
     const theme = createTheme({
 
         palette: {
