@@ -61,7 +61,7 @@ const PokemonEntry: React.FC<PokemonEntryProps> = ({ entries, mainTypeColor }) =
                 const fetchedItems: JSX.Element[] = await Promise.all(
                     englishEntries.map(async (entry, i: number) => {
                         const { gen, gameName } = await fetchGenerationAndGameName(entry.version.url);
-                        return <MenuItem key={i} value={i}><GenerationTags generation={gen} />  &nbsp;Pokemon {gameName}</MenuItem>;
+                        return <MenuItem key={i} value={i}><GenerationTags generation={gen} />  &nbsp;{gameName}</MenuItem>;
                     }))
 
                 // Sets the New Menu Items
