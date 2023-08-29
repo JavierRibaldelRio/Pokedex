@@ -84,8 +84,10 @@ const PokemonEntry: React.FC<PokemonEntryProps> = ({ entries, mainTypeColor }) =
     }
 
     return <div className="Pokemon-Entries">
+        <div className="Pokemon-Entries-Header">
+            <h2 className="Pokemon-Entries-Label"> Description: </h2>
 
-        <h2 className="Pokemon-Entries-Label">Description:
+
             <Select
                 id="Select-Pokedex-Entry"
                 className="Pokemon-Entries-Select"
@@ -93,10 +95,14 @@ const PokemonEntry: React.FC<PokemonEntryProps> = ({ entries, mainTypeColor }) =
                 displayEmpty={true}
                 value={entryNumber}
                 onChange={handleChange}>
-                {menuItems}
-            </Select>
-        </h2>
 
+                {/* All the different pokémons games where the pokémon has be */}
+                {menuItems}
+
+            </Select>
+        </div>
+
+        {/* Pokedex Entry */}
         <div className="Pokemon-Entries-Text">{englishEntries[entryNumber].flavor_text}</div>
 
 

@@ -79,16 +79,24 @@
 
     width: 100%;
 
+
 }
 
-.Pokemon-Entries-Select {
+.Pokemon-Entries-Header {
 
-    margin: 0 4vmin;
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 2vmin;
 }
 
-.Pokemon-Entries-Label {
-
-    margin: 0 0 2vmin 0;
+.Pokemon-Entries-Header * {
+    margin: 0;
 }
 
 /* Pokemon Types */
