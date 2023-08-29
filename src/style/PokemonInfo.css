@@ -15,6 +15,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
         "data  types entry"
+        "data . abilities"
     ;
 
     gap: 1vmin;
@@ -71,7 +72,7 @@
     font-family: 'Audiowide', sans-serif;
 }
 
-/* Pokemon Entry */
+/* Pokemon Entry and some users of <SelectText/> */
 
 .Pokemon-Entries {
 
@@ -82,7 +83,8 @@
 
 }
 
-.Pokemon-Entries-Header {
+.Pokemon-Entries-Header,
+.Pokemon-Abilities-Header {
 
     display: flex;
 
@@ -95,7 +97,8 @@
     margin-bottom: 2vmin;
 }
 
-.Pokemon-Entries-Header * {
+.Pokemon-Entries-Header *,
+.Pokemon-Abilities-Header * {
     margin: 0;
 }
 
@@ -132,4 +135,13 @@
     text-align: center;
 
     margin: 0;
+}
+
+/* Pokemon Abilities */
+
+.Pokemon-Abilities {
+
+    grid-area: abilities;
+
+    width: 100%;
 }

@@ -6,14 +6,13 @@ import { CircularProgress, ThemeProvider, createTheme } from "@mui/material";
 import PokemonTitle from './PokemonTitle';
 import PokemonEntry from './PokemonEntry';
 import PokemonTypes from './PokemonTypes';
+import PokemonAbilities from './PokemonAbilities';
 
 // Utils
-
 import getTypeColor from "../../utils/getTypeColor";
 
 
 // CSS
-
 import '../../style/PokemonInfo.css';
 
 
@@ -88,6 +87,8 @@ const PokemonInfo: React.FC<PokemonInfoProps> = ({ pokemonData }) => {
                 <PokemonTypes types={typeArr} />
 
                 <img style={{ gridArea: "data", maxWidth: "100%" }} alt={pokemonName} src={pokemonData.pokemon.sprites.other['official-artwork'].front_default} />
+
+                <PokemonAbilities abilities={pokemonData.pokemon.abilities} color={mainTypeColor} />
 
 
             </div>
