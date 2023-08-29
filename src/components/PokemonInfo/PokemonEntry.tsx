@@ -51,7 +51,7 @@ const PokemonEntry: React.FC<PokemonEntryProps> = ({ entries, mainTypeColor }) =
 
                 const fetchedItems: { title: JSX.Element, text: string }[] = await Promise.all(
 
-                    englishEntries.map(async (entry, i: number) => {
+                    englishEntries.map(async (entry) => {
 
                         // Gets the gameName and the Generation
                         const { gen, gameName } = await fetchGenerationAndGameName(entry.version.url);
