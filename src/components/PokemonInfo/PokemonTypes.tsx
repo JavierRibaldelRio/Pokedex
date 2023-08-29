@@ -13,7 +13,7 @@ interface PokemonTypesTags {
 const PokemonTypes: React.FC<PokemonTypesTags> = ({ types }) => {
 
 
-    const typeTags = types.map(type => <TypesTag type={type} />)
+    const typeTags = types.map(type => <TypesTag key={type} type={type} />)
 
     return <div className='Pokemon-Types'>
 
