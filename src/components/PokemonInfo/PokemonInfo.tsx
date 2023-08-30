@@ -7,6 +7,7 @@ import PokemonTitle from './PokemonTitle';
 import PokemonEntry from './PokemonEntry';
 import PokemonTypes from './PokemonTypes';
 import PokemonAbilities from './PokemonAbilities';
+import PokemonStat from './PokemonStat';
 
 // Utils
 import getTypeColor from "../../utils/getTypeColor";
@@ -85,6 +86,15 @@ const PokemonInfo: React.FC<PokemonInfoProps> = ({ pokemonData }) => {
                 <PokemonEntry entries={pokemonData.pokemonSpecie.flavor_text_entries} mainTypeColor={mainTypeColor} />
 
                 <PokemonTypes types={typeArr} />
+
+                <div className="Pokemon-Stats-Group">
+
+                    <PokemonStat stat="Height: " value={pokemonData.pokemon.height / 10 + " m"} />
+
+                    <PokemonStat stat="Weight: " value={pokemonData.pokemon.weight / 10 + " kg"} />
+
+
+                </div>
 
                 <img style={{ gridArea: "data", maxWidth: "100%" }} alt={pokemonName} src={pokemonData.pokemon.sprites.other['official-artwork'].front_default} />
 

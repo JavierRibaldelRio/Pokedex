@@ -9,12 +9,21 @@
 
 }
 
+/* Remove h2 default margin */
+
+.Pokemon-Info h2 {
+
+    margin: 0;
+}
+
 /* All the content of Pokemon Info excluding the title */
 .Pokemon-Data {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
         "data  types entry"
+        "data  stat entry"
+        "data . abilities"
         "data . abilities"
     ;
 
@@ -80,6 +89,9 @@
 
     width: 100%;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -97,11 +109,6 @@
     margin-bottom: 2vmin;
 }
 
-.Pokemon-Entries-Header *,
-.Pokemon-Abilities-Header * {
-    margin: 0;
-}
-
 /* Pokemon Types */
 
 .Pokemon-Types {
@@ -111,7 +118,7 @@
 
     display: flex;
 
-    align-items: baseline;
+    align-items: center;
     justify-content: space-around;
 
 }
@@ -144,4 +151,30 @@
     grid-area: abilities;
 
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Pokémon Stat */
+
+.Pokemon-Stats-Group {
+
+    grid-area: stat;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Pokemon-Stat {
+
+    display: flex;
+
+    width: 50%;
+
+    justify-content: space-between;
+    align-items: center;
 }
